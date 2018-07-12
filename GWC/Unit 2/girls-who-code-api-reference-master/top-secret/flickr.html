@@ -1,0 +1,33 @@
+<html>
+    <head></head>
+    <body>
+        <div id="container">
+
+        </div>
+        <script type="text/javascript">
+          // we can talk about why it would be bad to save this here
+          const api_key = '3baa8586f9b7202d3b0e80662c880403';
+          const query = 'Blizzard Entertainment';
+
+
+          window.fetch(
+            'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key='
+              + api_key + '&text='
+              + query + '&format=json&nojsoncallback=1&safe_search=1'
+          )
+            .then((result) => result.json())
+            .then((data) => {
+              return data.photos.photo;
+            })
+            .then((photos) => {
+              const container = document.getElementById('container');
+              photos.map((photo) => {
+                const img = document.createElement("img");
+                img.src = 'https://farm' + photo.farm + '.staticflickr.com/' + photo.server + '/' + photo.id + '_' + photo.secret + '.jpg';
+                container.appendChild(img);
+              })
+            });
+
+        </script>
+    </body>
+</html>
