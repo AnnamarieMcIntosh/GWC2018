@@ -1,0 +1,46 @@
+<html>
+    <head></head>
+    <body>
+        <div id="container">
+            <div id="giphy">
+                <form id="searchForm">
+                  <label>Search</label>
+                  <input type="text" id="query" value="Blizzard Entertainment" />
+                  <button type="submit">Search</button>
+                </form>
+
+                <div id="result">
+                    <h3 id="title"></h3>
+                    <img id="image" />
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+          // we can talk about why it would be bad to save this here
+          const key = 'VU0MWvV9PyOQln4z3PtKGbHUDiwfZAtm';
+
+          // onclick handler
+          document.getElementById('searchForm').onsubmit = (e) => {
+            e.preventDefault();
+            fetchImg(document.getElementById('query').value)
+              .then((result) => {
+                document.getElementById('title').innerText = result.title;
+                document.getElementById('image').src = result.img;
+              });
+          };
+
+          function fetchImg(query) {
+            return window.fetch(
+              'http://api.giphy.com/v1/gifs/search?q=' + query + '&api_key=' + key + '&limit=1' + '&rating=pg'
+            )
+              .then((resp) => resp.json())
+              .then((result) => {
+                return {
+                  title: result.data[0].title,
+                  img: result.data[0].images.original.url
+                };
+              });
+          }
+        </script>
+    </body>
+</html>
