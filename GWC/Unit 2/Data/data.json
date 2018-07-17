@@ -1,4 +1,8 @@
-[{"Name": "Annamarie", "birthday": "01/25/2002", "socialMedia": "Instagram", "freeTime": "Disneyland", "color": "Pink"},
-  {"Name": "Zoe", "birthday": "04/08/2001", "socialMedia": "Discord", "freeTime": "play videogames", "color":"Purple" }, 
-  {"Name": "Sam", "birthday": "(10/01/2001)", "socialMedia": "instagram", "freeTime": "Netflix", "color": "Black"}]
-[{"Name": "Annamarie", "birthday": "01/25/2002", "socialMedia": "Instagram", "freeTime": "Disneyland", "color": "Pink"}, {"Name": "Zoe", "birthday": "04/08/2001", "socialMedia": "Discord", "freeTime": "play videogames", "color": "Purple"}, {"Name": "Sam", "birthday": "(10/01/2001)", "socialMedia": "instagram", "freeTime": "Netflix", "color": "Black"}, {"Name": "Ashleigh", "birthday": "09/29/2001", "socialMedia": "Instagram", "freeTime": "watch movies", "color": "Yellow"}, {"Name": "Emily", "birthday": "11/29/2001", "socialMedia": "Instagram", "freeTime": "Sleep", "color": "Blue"}, {"Name": "Marla", "birthday": "05/05/2002", "socialMedia": "Instagram", "freeTime": "Scroll", "color": "Green"}, {"Name": "faith", "birthday": "07/14/1998", "socialMedia": "pinterest", "freeTime": "think", "color": "blue"}, {"Name": "hailey", "birthday": "04/24/02", "socialMedia": "youtube", "freeTime": "youtube", "color": "whitw"}]
+[{"Name": "Annamarie", "birthday": "01/25/2002", "age": "16", "socialMedia": "Instagram", "freeTime": "Disneyland", "color": "Pink"},
+  {"Name": "Zoe", "birthday": "04/08/2001", "age": "17", "socialMedia": "Discord", "freeTime": "play videogames", "color":"Purple" },
+  {"Name": "Sam", "birthday": "10/01/2001", "age": "16", "socialMedia": "Instagram", "freeTime": "Netflix", "color": "Black"},
+  {"Name": "Ashleigh", "birthday": "09/29/2001", "age": "16", "socialMedia": "Instagram", "freeTime": "watch movies", "color": "Yellow"},
+  {"Name": "Emily", "birthday": "11/29/2001", "age": "16", "socialMedia": "Instagram", "freeTime": "Sleep", "color": "Blue"},
+  {"Name": "Marla", "birthday": "05/05/2002", "age": "16", "socialMedia": "Instagram", "freeTime": "Scroll", "color": "Green"},
+  {"Name": "Faith", "birthday": "07/14/1998", "age": "20", "socialMedia": "Pinterest", "freeTime": "think", "color": "Blue"},
+  {"Name": "Hailey", "birthday": "04/24/02", "age": "16", "socialMedia": "Youtube", "freeTime": "youtube", "color": "white"}]

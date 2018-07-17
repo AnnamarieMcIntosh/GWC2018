@@ -4,6 +4,7 @@ import os
 
 questions = {"Name": "What is your name? ",
 "birthday": "When is your birthday? (MM/DD/YYYY) ",
+"age":"How old are you?",
 "socialMedia": "What Social Media do you use most often? ",
 "freeTime": "What do you do in your free time? ",
 "color": "What is your favorite color? "
